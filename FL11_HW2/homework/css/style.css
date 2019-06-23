@@ -26,10 +26,10 @@
         background-color: white;
     }
 
-    .tm-team-description-container,
-    .tm-content-header {
-        max-width: 95%;
+    .tm-team-description-container {
+        max-width: 85%;
         text-align: center;
+        margin: auto;
     }
 
     .heading li {
@@ -106,6 +106,30 @@
     .heading a:visited {
         color: #ffb347;
     }
+
+    .tm-section-description {
+        text-indent: 10%;
+    }
+
+    .tm-banner-text {
+        text-shadow: 0 5px 2px #76cdd7, 0 12px 2px #76cdd7;
+        letter-spacing: 5px;
+        word-spacing: 15px;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(-360deg);
+        }
+    }
 }
 
 .box-bg:hover {
@@ -140,16 +164,6 @@ section {
     animation-iteration-count: infinite;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
-}
-
-@keyframes spin {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(-360deg);
-    }
 }
 
 .heading h2 {
@@ -243,10 +257,6 @@ input[type=email] {
 h2+p {
     font-style: italic;
     line-height: 30px;
-}
-
-.tm-section-description {
-    text-indent: 10%;
 }
 
 .flex-2-col {
