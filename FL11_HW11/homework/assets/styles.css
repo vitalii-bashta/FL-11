@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    max-width: 50%;
+    margin: auto;
+}
+
+.heading {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.single-item {
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+
+.hidden {
+    display: none;
+}
+
+.todo-item {
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#input {
+    min-width: 87%;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-right: auto;
+}
+
+.add-item {
+    color: lightgrey;
+    font-size: 50px;
+}
+
+.hr {
+    background-color: lightblue;
+    min-height: 5px;
+    margin: 20px 0px;
+}
+
+.trash {
+    margin-left: auto;
+}
+
+.edit,
+.save,
+.trash {
+    color: lightskyblue;
+}
+
+.cb-checked,
+.cb-unchecked {
+    color: lightgrey;
+    font-weight: 100;
+}
+
+.heading,
+.todo-item {
+    color: #40B5FE;
+}
+
+.cb-checked,
+.cb-unchecked,
+.edit,
+.save,
+.trash {
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.warning {
+    color: grey;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.active {
+    color: grey;
+    cursor: pointer;
+}
+
+.edit-input {
+    min-width: 270px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
