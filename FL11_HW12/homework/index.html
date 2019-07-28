@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 12 - Simple TODO List</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="root" class="main-wrapper">
+        <div id="main-page">
+            <h1>Simple TODO application</h1>
+            <a href="#add-new">
+                <div class="button">Add new task</div>
+            </a>
+            <p class="todo-status">TODO is empty</p>
+            <hr>
+            <div class="all-items-wrapper"></div>
+        </div>
+        <div id="add-item-page">
+            <h1>Add task</h1>
+            <div class="add-item-wrapper">
+                <input id="add-new-input" placeholder="type item name">
+                <a href="#">
+                    <div class="button">Cancel</div>
+                </a>
+                <div id="save-new-btn" class="button">Save changes</div>
+            </div>
+        </div>
+        <div id="edit-item-page">
+            <h1>Modify task</h1>
+            <div class="modify-task-wrapper">
+                <input id="edit-input" placeholder="edit-name">
+                <a href="#">
+                    <div id="cancel-edit-btn" class="button">Cancel</div>
+                </a>
+                <div id="save-edit-btn" class="button">Save changes</div>
+            </div>
+        </div>
+        <div id="warning" class="hidden">
+            <span class="modal-close-btn">x</span>
+            <h4>Danger!</h4>
+            <p class="warning-message"></p>
+        </div>
+    </div>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>

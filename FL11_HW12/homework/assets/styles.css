@@ -1,0 +1,79 @@
+.main-wrapper {
+    position: relative;
+    padding: 20px;
+    min-height: 500px;
+}
+
+#main-page,
+#add-item-page,
+#edit-item-page {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.trash-icon {
+    float: right;
+}
+
+div[class^='todo-item'] {
+    margin: 15px 0;
+}
+
+.trash-icon {
+    cursor: pointer;
+}
+
+.button {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 2px;
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: lightgrey;
+    transition-duration: 1s;
+}
+
+.add-item-wrapper,
+.modify-task-wrapper {
+    display: flex;
+}
+
+#main-page .button {
+    max-width: 20%;
+}
+
+.checked-wrapper {
+    background-color: lightgrey;
+}
+
+.hidden {
+    display: none;
+}
+
+#warning {
+    background-color: red;
+    color: white;
+    max-width: 200px;
+    padding: 20px;
+    position: absolute;
+}
+
+.modal-close-btn {
+    float: right;
+    cursor: pointer;
+}
