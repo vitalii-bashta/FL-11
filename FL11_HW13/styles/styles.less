@@ -1,0 +1,78 @@
+@import "variables.less";
+
+@media (min-width : 576px) and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+}
+
+.navbar {
+    .nav-item {
+        .nav-link {
+            &:hover {
+                color: @white;
+                background-color: @blue;
+            }
+
+            &:focus {
+                color: @white;
+                background-color: @blue;
+            }
+        }
+    }
+}
+
+.page-header {
+    margin: 20px 0;
+    color: @blue;
+
+    &.header--bordered {
+        border-bottom: 1px solid @blue;
+    }
+}
+
+.card {
+    border: none;
+}
+
+.activities__section {
+    border: 1px solid;
+
+    .card-body {
+        padding: 10px 0;
+        color: @white;
+    }
+}
+
+.activities__section--red {
+    border-color: @red;
+
+    .card-body--red {
+        background-color: @red;
+    }
+}
+
+.activities__section--blue {
+    border-color: @blue;
+
+    .card-body--blue {
+        background-color: @blue;
+    }
+}
+
+.activities__section--orange {
+    border-color: @orange;
+
+    .card-body--orange {
+        background-color: @orange;
+    }
+}
+
+.activities__section--green {
+    border-color: @green;
+
+    .card-body--green {
+        background-color: @green;
+    }
+}
