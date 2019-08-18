@@ -80,6 +80,16 @@ Hamburger.prototype.info = function () {
     let secretIngredient = this.secretIngredient ? `with secret ingredient, ` : '';
     let cheese = this.cheese ? `with cheese, ` : '';
     let tomato = this.tomato ? `with ${this.tomato} tomato, ` : '';
-    let isBit = this.bites ? `is bit ${this.bites} times.` : 'is not bitten. ';
-    return `${this.type} hamburger: `.concat(secretIngredient, cheese, tomato, isBit, `Total calories: ${this.getCalories()}`);
+    let isBit = this.bites ? `is bit ${this.bites} times.` : 'is not bitten.';
+    return `${this.type} hamburger: `.concat(secretIngredient, cheese, tomato, isBit, ` Total calories: ${this.getCalories()}`);
 }
+
+const myHamburger = new Hamburger('classic', 600);
+
+myHamburger.addSecretIngredient();
+myHamburger.addTomato();
+myHamburger.addCheese();
+myHamburger.bite();
+myHamburger.bite();
+myHamburger.bite();
+console.log(myHamburger.info());
