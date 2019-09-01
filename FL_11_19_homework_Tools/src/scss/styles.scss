@@ -1,0 +1,14 @@
+.main-wrapper {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.play-button {
+    @include button;
+}
+
+.reset {
+    @include button;
+    background-color: lightblue;
+    color: white; 
+}

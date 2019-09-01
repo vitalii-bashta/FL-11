@@ -1,0 +1,15 @@
+@mixin button {
+    padding: 15px 45px;
+    margin: 15px;
+    background-color: lightskyblue;
+    border: none;
+    color: grey;
+    font-size: 1.2em;
+    cursor: pointer;
+    &:hover {
+        background-color: darken(lightskyblue, 30%);
+        transition-duration: 1s;
+        color: white;
+        transform: translateY(5px);
+    }
+}
