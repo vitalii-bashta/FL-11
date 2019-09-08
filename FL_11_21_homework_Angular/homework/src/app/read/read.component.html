@@ -1,0 +1,15 @@
+<div class="item-wrapper">
+  <div class="news-wrapper">
+    <div class="image-wrapper"></div>
+    <div>
+      <h3> {{ selectedNews?.heading }} </h3>
+      <p>{{ selectedNews?.content }}</p>
+    </div>
+  </div>
+  <div>
+    <p>Date: {{ selectedNews?.date | date:'medium' }}</p>
+    <p>Author: {{ selectedNews?.author }}</p>
+  </div>
+</div>
+
+<button routerLink='/'>Back</button>

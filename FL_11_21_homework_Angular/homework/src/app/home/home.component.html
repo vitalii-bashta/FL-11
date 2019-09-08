@@ -1,0 +1,24 @@
+<header>
+  <div class="heading">
+      <h2>News</h2>
+      <h4>{{ selectedCategory }}</h4>
+  </div>
+  <hr>
+  <div class="nav">
+      <select (change)="onSelectChanged($event.target.value)">
+          <option *ngFor="let option of sources" [value]="option">{{ option }}</option>
+      </select>
+      <form>
+          <input [(ngModel)]="filterValue" [ngModelOptions]="{standalone: true}" type='text' placeholder='Type your text...'>
+          <button (click)="filterValues()">Filter</button>
+      </form>
+      <button routerLink='/create'>Add article</button>
+  </div>
+</header>
+
+<div class="list-wrapper">
+    <ng-container *ngFor="let item of displayedNews">
+        <app-list-item [listItem]="item"></app-list-item>
+    </ng-container>
+</div>
+

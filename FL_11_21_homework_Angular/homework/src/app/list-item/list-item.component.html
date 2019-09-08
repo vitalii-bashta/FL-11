@@ -1,0 +1,13 @@
+<div class="item-wrapper">
+    <div class="news-wrapper">
+        <div class="image-wrapper"></div>
+        <div>
+            <h3> {{ listItem.heading }} </h3>
+            <p>{{ listItem.shortDesc }}</p>
+            <a [routerLink]="['/newsList', listItem.id]" routerLinkActive="active">Read more</a>
+        </div>
+    </div>
+    <div>
+        <p>{{ listItem.date | date:'medium'}}</p>
+    </div>
+</div>
